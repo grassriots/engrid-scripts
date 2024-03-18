@@ -27,9 +27,6 @@
   width: initial;
 }
 
-.en__twitterTarget__select {
-  // width: initial; // Required for flexbox sizing or will be set to 100% width
-}
 
 .en__twitterTarget__image,
 .en__twitterTarget__image:not([width]) {
@@ -60,11 +57,6 @@
   display: none;
 }
 
-// .en__tweetButton__send,
-// .en__tweetButton__sent {
-//   background-color: #f1700b;
-//   border-radius: 0;
-// }
 
 .en__twitterTarget,
 .en__tweet,

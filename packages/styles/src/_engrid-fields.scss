@@ -7,7 +7,6 @@
 
   // TYPOGRAPHY LABEL
   --label_font-family: var(--default_font-family);
-  // --label_color: initial;
   --label_font-size: var(--default_font-size);
   --label_font-weight: initial;
   --label_line-height: initial;
@@ -16,15 +15,11 @@
 
   // TYPOGRAPHY INPUT
   --input_font-family: var(--default_font-family);
-  // --input_color: #000000;
   --input_font-size: var(--default_font-size);
   --input_font-weight: initial;
   --input_line-height: initial;
-  // --input_background-color: #fafafa;
   --input_border-width: 1px;
-  // --input_border-color: #dfdfe1;
   --input_border-radius: 6px;
-  // --input_placeholder-color: var(--color_light-gray);
   --input_placeholder-opacity: initial;
   --input_placeholder-font-weight: initial;
   --input_box-shadow: inset 0 2px 2px -1px rgba(74, 74, 104, 0.1);
@@ -32,18 +27,11 @@
 
   // TYPOGRAPHY INPUT:FOCUS
   // TYPOGRAPHY INPUT:HOVER
-  // --input_color_hover: var(--input_color);
-  // --input_background-color_hover: var(--input_background-color);
-  // --input_border-color_hover: #767677;
-  // --input_border-bottom-color_hover: var(--input_border-color_hover);
   --input_box-shadow_hover: var(--input_box-shadow);
 
   // TYPOGRAPHY RADIO
   --radio_content: "";
-  // --radio_color: var(--input_color);
-  // --radio_background-color: var(--input_background-color);
   --radio_border-width: var(--input_border-width);
-  // --radio_border-color: var(--input_border-color);
   --radio_border-radius: 50%;
   --radio_box-shadow: none;
   --radio_font-family: var(
@@ -65,22 +53,13 @@
 
   // TYPOGRAPHY RADIO INPUT:FOCUS
   // TYPOGRAPHY RADIO INPUT:HOVER
-  // --radio_color_hover: var(--radio_color);
-  // --radio_background-color_hover: var(--radio_background-color);
-  // --radio_border-color_hover: var(--input_border-color_hover);
   --radio_box-shadow_hover: inset 0 0 0 6px #f5f5f5;
 
   // TYPOGRAPHY RADIO INPUT:SELECTED
-  // --radio_color_selected: var(--radio_color_hover);
-  // --radio_background-color_selected: var(--radio_background-color_hover);
-  // --radio_border-color_selected: var(--input_border-color_hover);
   --radio_box-shadow_selected: inset 0 0 0 6px #000000;
 
   // TYPOGRAPHY CHECKBOX
-  // --checkbox_color: var(--color_black);
-  // --checkbox_background-color: var(--radio_background-color);
   --checkbox_border-width: var(--input_border-width);
-  // --checkbox_border-color: var(--radio_border-color);
   --checkbox_border-radius: var(--input_border-radius);
   --checkbox_font-family: var(--radio_font-family);
   --checkbox_font-size: var(--radio_font-size);
@@ -96,27 +75,17 @@
 
   // TYPOGRAPHY CHECKBOX INPUT:FOCUS
   // TYPOGRAPHY CHECKBOX INPUT:HOVER
-  // --checkbox_color_hover: var(--checkbox_color);
-  // --checkbox_background-color_hover: var(--radio_background-color_hover);
-  // --checkbox_border-color_hover: var(--radio_border-color_hover);
 
   // TYPOGRAPHY CHECKBOX INPUT:CHECKED
   --checkbox_content_checked: "\2713"; // ✓
-  // --checkbox_color_checked: var(--checkbox_color_hover);
-  // --checkbox_background-color_checked: var(--radio_background-color_hover);
-  // --checkbox_border-color_checked: var(--color_black);
 
   // TYPOGRAPHY SELECT
   --select_font-family: var(--input_font-family);
-  // --select_color: var(--input_color);
   --select_font-size: var(--input_font-size);
   --select_font-weight: initial;
   --select_line-height: var(--input_line-height);
-  // --select_background-color: var(--input_background-color);
   --select_border-width: var(--input_border-width);
-  // --select_border-color: var(--input_border-color);
   --select_border-radius: var(--input_border-radius);
-  // --select_placeholder-color: var(--input_placeholder-color);
   --select_placeholder-opacity: var(--input_placeholder-opacity);
   --select_placeholder-font-weight: var(--input_placeholder-font-weight);
   --select_box-shadow: var(--input_box-shadow);
@@ -125,33 +94,21 @@
 
   // TYPOGRAPHY SELECT:FOCUS
   // TYPOGRAPHY SELECT:HOVER
-  // --select_color_hover: var(--select_color);
-  // --select_background-color_hover: var(--select_background-color);
-  // --select_border-color_hover: var(--input_border-color_hover);
-  // --select_border-bottom-color_hover: var(--select_border-color_hover);
   --select_box-shadow_hover: var(--input_box-shadow_hover);
 
   // TYPOGRAPHY TEXTAREA
   --textarea_font-family: var(--input_font-family);
-  // --textarea_color: var(--input_color);
   --textarea_font-size: var(--input_font-size);
   --textarea_font-weight: initial;
   --textarea_line-height: initial;
-  // --textarea_background-color: var(--input_background-color);
   --textarea_border-width: var(--input_border-width);
-  // --textarea_border-color: var(--input_border-color);
   --textarea_border-radius: var(--input_border-radius);
-  // --textarea_placeholder-color: var(--color_light-gray);
   --textarea_box-shadow: var(--input_box-shadow);
   --textarea_padding: var(--input_padding);
   --textarea_min-height: calc(1ch + (var(--textarea_font-size) * 10));
 
   // TYPOGRAPHY TEXTAREA:FOCUS
   // TYPOGRAPHY TEXTAREA:HOVER
-  // --textarea_color_hover: var(--textarea_color);
-  // --textarea_background-color_hover: var(--textarea_background-color);
-  // --textarea_border-color_hover: var(--input_border-color_hover);
-  // --textarea_border-bottom-color_hover: var(--textarea_border-color_hover);
   --textarea_box-shadow_hover: var(--input_box-shadow_hover);
 }
 
@@ -182,15 +139,11 @@
     flex-basis: 100%;
     padding-bottom: 0rem;
     margin-bottom: var(--fields_spacing-block);
-    // align-self: flex-end;
 
     // Helps when the field label gets additional content added to it. https://d.pr/v/9rFaiW
     // Exclude Survey Block questions from having justify-content: space-between; because they have numbers included with them. https://cln.sh/0d6G0Jn9
     .en__field__label:not(.en__field__label--item):not([for*="svquestion"]),
     .en__field__helpText {
-      // padding-top: 0rem;
-      // padding-bottom: 0rem;
-      // margin-top: 0.25rem;
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -407,8 +360,6 @@ input.en__field__input {
     background-color: var(--input_background-color_hover);
     border-color: var(--input_border-color_hover);
     border-bottom-color: var(--input_border-bottom-color_hover);
-    // outline: none; // Shared between input:focus, textarea:focus, and select:focus
-    // --input_placeholder-color: hsl(0, 0%, 67%);
   }
 }
 .en__field__input--vgs {
@@ -607,7 +558,6 @@ input[type="checkbox"] {
     color: var(--checkbox_color_checked);
     background-color: var(--checkbox_background-color_checked);
     border-color: var(--checkbox_border-color_checked);
-    // box-shadow: inset 0 0 0 var(--checkbox_border-width) var(--checkbox_border-color);
   }
 }
 
@@ -632,7 +582,6 @@ input[type="checkbox"] {
     content: "";
     justify-content: center;
     align-items: center;
-    // margin-right: var(--fields_spacing-inline);
     color: var(--checkbox_color);
     background-color: var(--checkbox_background-color);
     border-style: solid;
@@ -667,7 +616,6 @@ input[type="checkbox"] {
     color: var(--checkbox_color_checked);
     background-color: var(--checkbox_background-color_checked);
     border-color: var(--checkbox_border-color_checked);
-    // box-shadow: inset 0 0 0 var(--checkbox_border-width) var(--checkbox_border-color);
   }
 }
 
@@ -679,7 +627,6 @@ input[type="checkbox"] {
 
 .en__pg__select input {
   cursor: pointer;
-  // visibility: hidden; // Used to hide parent while keeping its pseduo element visible. Commented out because it was also preventing the radio from being navigated to with the keyboard
   position: relative; // Used to hide the field while keeping its pseduo element visible
   left: -9999px; // Used to hide the field while keeping its pseduo element visible
   max-width: min-content;
@@ -695,7 +642,6 @@ input[type="checkbox"] {
     content: var(--radio_content);
     justify-content: center;
     align-items: center;
-    // margin-right: var(--fields_spacing-inline);
     color: var(--radio_color);
     background-color: var(--radio_background-color);
     border-style: solid;
@@ -813,7 +759,6 @@ select.en__field__input--tripleselect {
   width: 100%; // Shared between input, textarea, and select
   min-width: initial; // Shared between input, textarea, and select
   display: block; // Shared between input, textarea, and select
-  // -webkit-box-sizing: border-box; // Shared between input, textarea, and select
   box-sizing: border-box; // Shared between input, textarea, and select
   margin: 0rem; // Shared between input, textarea, and select
   padding: var(--select_padding);
@@ -835,9 +780,7 @@ select.en__field__input--tripleselect {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb(0, 0, 0)'></polygon></svg>");
     border-color: var(--select_border-color_hover);
     border-bottom-color: var(--select_border-bottom-color_hover);
-    // outline: none; // Shared between input:focus, textarea:focus, and select:focus
     box-shadow: var(--select_box-shadow_hover);
-    // --input_placeholder-color: hsl(0, 0%, 67%);
   }
 }
 
@@ -861,7 +804,6 @@ textarea,
   width: 100%; // Shared between input, textarea, and select
   min-width: initial; // Shared between input, textarea, and select
   display: block; // Shared between input, textarea, and select
-  // -webkit-box-sizing: border-box; // Shared between input, textarea, and select
   box-sizing: border-box; // Shared between input, textarea, and select
   margin: 0rem; // Shared between input, textarea, and select
   padding: var(--textarea_padding);
@@ -877,9 +819,7 @@ textarea,
     background-color: var(--textarea_background-color_hover);
     border-color: var(--textarea_border-color_hover);
     border-bottom-color: var(--textarea_border-bottom-color_hover);
-    // outline: none; // Shared between input:focus, textarea:focus, and select:focus
     box-shadow: var(--textarea_box-shadow_hover);
-    // --input_placeholder-color: hsl(0, 0%, 67%);
   }
 }
 
@@ -953,17 +893,13 @@ textarea,
   min-width: var(
     --checkbox_width
   ); // Prevent checkboxes getting squished https://d.pr/i/87br13
-  // left: -2rem;
   display: inline-block;
   vertical-align: middle;
   border: 1px solid var(--color_black);
-  // -webkit-box-shadow: inset 0 0 0 5px var(--color_white);
   box-shadow: inset 0 0 0 5px var(--color_white);
   background-color: var(--color_white);
   cursor: pointer;
-  // -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  // -webkit-transition-property: border-color, background-color;
   transition-property: border-color, background-color;
   top: 5px;
   left: 0;
@@ -974,7 +910,6 @@ textarea,
   border-radius: var(--checkbox_border-radius);
   border-width: var(--checkbox_border-width);
   background-color: var(--checkbox_background-color);
-  // -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -991,7 +926,6 @@ textarea,
   + .en__contactDetails__rows:before {
   color: var(--checkbox_color_checked);
   background-color: var(--checkbox_background-color_checked);
-  // -webkit-box-shadow: inset 0 0 0 0 var(--checkbox_background-color);
   box-shadow: inset 0 0 0 0 var(--checkbox_background-color);
   border-width: var(--checkbox_border-width);
   border-color: var(--checkbox_border-color_checked);
@@ -1001,19 +935,13 @@ textarea,
 .en__contacts:not(.en__contacts--hideCheck)
   .en__contactDetails__select:checked
   + .en__contactDetails__rows::after {
-  // Needs an SVG safe color passed in https://stackoverflow.com/questions/25477819/scss-variable-in-background-image-with-svg-image-data-uri
-  // content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='21' height='16' viewBox='0 0 21 16'><path fill="#color-white" fill-rule='nonzero' d='M18.76.16L6.68 12.113l-4.44-4.392a.555.555 0 0 0-.779 0L.161 9.006a.541.541 0 0 0 0 .771L6.29 15.84a.555.555 0 0 0 .78 0l13.77-13.624a.541.541 0 0 0 0-.771L19.539.16a.555.555 0 0 0-.779 0z'/></svg>");
-  // fill: var(--color_primary);
   content: var(
     --checkbox_content_checked
   ); // REF: https://www.toptal.com/designers/htmlarrows/symbols/check-mark/
   position: absolute;
   left: 3px;
   top: 5px;
-  // width: 21px;
-  // height: 16px;
   color: var(--checkbox_color_checked);
-  // background-color: var(--checkbox_background-color_checked);
   cursor: pointer;
   font-family: var(--checkbox_font-family);
   font-size: var(--checkbox_font-size);
@@ -1131,20 +1059,7 @@ textarea[readonly] {
 /************************************
  * Inline Country Styling
  ***********************************/
-// .inline-country .en__field--country {
-//   position: absolute;
-//   right: 0;
-//   align-items: flex-end;
 
-//   select {
-//     width: 80px;
-//     // z-index: 1;
-//     background-color: transparent;
-//     // -webkit-box-shadow: none;
-//     box-shadow: none;
-//     text-align-last: right;
-//   }
-// }
 
 /************************************
  * Live currency

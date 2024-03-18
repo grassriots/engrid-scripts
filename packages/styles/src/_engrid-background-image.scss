@@ -1,10 +1,10 @@
-[data-engrid-theme] {
+/*[data-engrid-theme] {
   // ENGRID BACKGROUND IMAGE SECTION'S BACKGROUND PATTERN
   // This is a background pattern that is shown before the hi-resolution background image is lazy loaded in, if at all
   // It's background color "--engrid__page-backgroundImage_background-color" should be the average color of the image
   // REF: (https://doodad.dev/pattern-generator/)
   --engrid__page-backgroundImage_url: "url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)"; // Invisible GIF
-}
+}*/
 
 // There is no reason to ever show the background image outside of pagebuilder
 // Resolves: https://d.pr/i/DnfPQF
@@ -21,12 +21,12 @@ body[data-engrid-page-background="image"] {
   // High resolution imagery can cause FPS drops when scrolling due to page redraws
   // REF: Fix scrolling performance with CSS will-change property (https://www.fourkitchens.com/blog/article/fix-scrolling-performance-css-will-change-property/)
   .page-backgroundImage {
-    overflow: hidden; // added for before pseudo-element to help improve page redraw and subsequent page scroll FPS
-    position: relative; // added for before pseudo-element to help improve page redraw and subsequent page scroll FPS
+    overflow: hidden; 
+    position: relative; 
 
     &:before {
       content: " ";
-      position: fixed; // instead of background-attachment
+      position: fixed;
       width: 100%;
       height: 100%;
       top: 0;
@@ -34,7 +34,7 @@ body[data-engrid-page-background="image"] {
       background-repeat: no-repeat;
       background-size: cover;
       background-image: var(--engrid__page-backgroundImage_url);
-      will-change: transform; // creates a new paint
+      will-change: transform; 
     }
 
     // If the background image has an attribution it will be converted to a <figure> and the caption added, it can be displayed over top of the normal background image

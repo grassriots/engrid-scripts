@@ -341,13 +341,6 @@
       }
     }
 
-    // .hide {
-    //   background-color: #ff00001a !important;
-    //   &.pboAdvancedRow__preview .en__component--column {
-    //     outline-color: #ff0000 !important;
-    //     z-index: 1;
-    //   }
-    // }
   }
 
   // In Page Builder but not in the Advanced Row Preview Modal
@@ -431,10 +424,6 @@
       margin-left: 8px;
       padding-left: 0;
       padding-right: 0;
-      // cursor: move;
-      // background-image: url(https://e-activist.com/ea-demo/frontend/build/3.63.1/images/icons/move-16-white.png) !important;
-      // background-position: 6px 50%;
-      // background-repeat: no-repeat;
       background-color: var(--edit_background-color);
       cursor: default;
 

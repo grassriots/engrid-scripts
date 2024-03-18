@@ -1,5 +1,4 @@
 [data-engrid-theme] {
-  // COLOR PALETTE
   --color_transparent: transparent;
   --color_white: hsl(0, 0%, 100%);
   --color_off-white: hsl(0, 0%, 83%);
@@ -9,24 +8,23 @@
   --color_off-black: hsl(0, 0%, 17%);
   --color_black: hsl(0, 0%, 0%);
 
-  // PRIMARY COLORS
-  // e.g. Used for the main Submit Button
+  
+  
   --color_primary: #22a3cb;
   --color_primary_overlay: #ffffff;
   --color_primary_accent: #000000;
 
-  // SECONDARY COLORS
-  // e.g. Used for the non-Submit Buttons
+
   --color_secondary: #000000;
   --color_secondary_overlay: #ffffff;
   --color_secondary_accent: #000000;
 
-  // TERTIARY COLORS
+  
   --color_tertiary: #ffffff;
   --color_tertiary_overlay: #000000;
   --color_tertiary_accent: #ffffff;
 
-  // TEXT
+  
   --default_color: initial;
   --h1_color: var(--default_color);
   --h2_color: var(--h1_color);
@@ -41,13 +39,13 @@
   --media-attribution__color: rgba(255, 255, 255, 0.9);
   --media-attribution__background-color: rgba(0, 0, 0, 0.3);
 
-  // ERRORS
+  
   --error__color: #ff530a;
   --error__color_grayscale: #949494;
   --error__color_faded: #fff8f4;
   --error__background-color: #fff8f4;
 
-  // FIELDS
+  
   --label_color: initial;
   --input_color: #000000;
   --input_background-color: #fafafa;
@@ -91,7 +89,7 @@
   --textarea_border-color_hover: var(--input_border-color_hover);
   --textarea_border-bottom-color_hover: var(--textarea_border-color_hover);
 
-  // BUTTONS
+  
   --button_color: var(--color_primary_overlay);
   --button_background-color: var(--color_primary);
   --button_border-color: var(--button_background-color);
@@ -104,7 +102,7 @@
   --button_background-color_checked: var(--button_background-color_hover);
   --button_border-color_checked: var(--button_border-color_hover);
 
-  // SUBMIT BUTTONS
+  
   --submit__button_color: var(--button_color);
   --submit__button_border-color: var(--button_border-color);
   --submit__button_background-color: var(--button_background-color);
@@ -117,7 +115,7 @@
   );
   --submit__button_border-color_checked: var(--button_border-color_hover);
 
-  // DONATION PAGE (RADIO TO BUTTONS)
+  
   --recurring-frequency__button_color: var(--button_color);
   --recurring-frequency__button_background-color: var(
     --button_background-color
@@ -187,7 +185,7 @@
     --button_border-color_hover
   );
 
-  // PAGE SECTIONS
+  
   --engrid__page_background-color: var(--color_transparent);
   --engrid__content_background-color: var(--color_transparent);
   --engrid__body_background-color: var(--color_white);

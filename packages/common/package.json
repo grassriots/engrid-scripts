@@ -1,6 +1,6 @@
 {
-  "name": "@4site/engrid-common",
-  "version": "0.17.22",
+  "name": "@grassriots/engrid-common",
+  "version": "1.0.o",
   "description": "Common scripts for the ENGRID Project",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,20 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/4site-interactive-studios/engrid-scripts.git",
+    "url": "https://github.com/grassriots/engrid-scripts.git",
     "directory": "packages/common"
   },
-  "author": "4Site Studios",
+  "author": "Grassriots Inc.",
   "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/4site-interactive-studios/engrid-scripts/issues"
-  },
   "dependencies": {
     "shuffle-seed": "^1.1.6",
     "strongly-typed-events": "^2.0.9"
   },
-  "homepage": "https://github.com/4site-interactive-studios/engrid-scripts#readme",
-  "gitHead": "e08b9894e78cb8ca67c298f7e29b6da709ffe771",
+  "homepage": "https://github.com/grassriots/engrid-scripts#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
   }

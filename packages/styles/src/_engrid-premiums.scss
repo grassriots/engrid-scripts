@@ -59,13 +59,11 @@
     grid-area: en__pg__select;
     padding: 0;
     width: var(--radio_width);
-    // padding: 0 calc(var(--fields_spacing-inline) * 2) 0 0;
   }
 
   .en__pg__display {
     grid-area: en__pg__display;
     padding: 0;
-    // padding: 0 0 0 calc(var(--fields_spacing-inline) * 2);
   }
 
   .en__pg__detail {

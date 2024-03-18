@@ -11,17 +11,16 @@
       border-width: var(--input_border-width) !important;
       border-color: var(--input_border-color) !important;
       border-radius: var(--input_border-radius) !important;
-      height: auto !important; // Shared between input, textarea, and select
-      max-width: 100% !important; // Shared between input, textarea, and select
-      width: 100% !important; // Shared between input, textarea, and select
-      min-width: initial !important; // Shared between input, textarea, and select
-      display: block !important; // Shared between input, textarea, and select
-      // -webkit-box-sizing: border-box; // Shared between input, textarea, and select
-      box-sizing: border-box; // Shared between input, textarea, and select
-      margin: 0rem !important; // Shared between input, textarea, and select
+      height: auto !important; 
+      max-width: 100% !important; 
+      width: 100% !important; 
+      min-width: initial !important; 
+      display: block !important; 
+      box-sizing: border-box; 
+      margin: 0rem !important; 
       padding: var(--input_padding) !important;
-      transition: box-shadow 0.25s, border-color 0.25s ease-in-out !important; // Shared between input, textarea, and select
-      border-style: solid !important; // Shared between input, textarea, and select
+      transition: box-shadow 0.25s, border-color 0.25s ease-in-out !important; 
+      border-style: solid !important; 
 
       &:focus,
       &:hover {
@@ -29,8 +28,6 @@
         background-color: var(--input_background-color_hover) !important;
         border-color: var(--input_border-color_hover) !important;
         border-bottom-color: var(--input_border-bottom-color_hover) !important;
-        // outline: none; // Shared between input:focus, textarea:focus, and select:focus
-        // --input_placeholder-color: hsl(0, 0%, 67%);
       }
     }
   }

@@ -8,7 +8,7 @@
   vertical-align: bottom;
   -webkit-animation: ellipsis steps(4, end) 250ms infinite;
   animation: ellipsis steps(4, end) 250ms infinite;
-  content: "\2026"; // ascii code for the ellipsis character
+  content: "\2026"; 
   width: 0px;
 }
 

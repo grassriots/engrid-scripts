@@ -1,7 +1,7 @@
 /* Reset minimum and default width */
 .en__component--column {
-  min-width: auto; // Removed !important because we have better main.css placement in the Page Temaplte
-  width: auto; // Removed !important because we have better main.css placement in the Page Temaplte
+  min-width: auto; 
+  width: auto; 
 }
 
 /* EN sets width to 100%, without setting a max-width it can overflow offscreen */

@@ -1,3 +1,6 @@
 tsconfig.json
 dist
 test
+archived
+.stylelintrc
+stylelint.config.js

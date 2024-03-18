@@ -169,14 +169,6 @@ input[type="text"].en__ticket__quantity {
   width: 100%;
 }
 
-// button.en__eventOccurrence__select{
-//   margin-bottom: 0;
-//   background-color: var(--button_background-color);
-
-//   &:hover{
-//     background-color: var(--button_background-color_hover);
-//   }
-// }
 
 button.en__eventOccurrence__select {
   margin-bottom: 0;
@@ -268,7 +260,6 @@ button.en__eventOccurrence__select > label {
   gap: 1em;
   grid-auto-flow: column;
   grid-template-areas: "en__additional__label en__additional__amount en__additional__promo";
-  // border-bottom: 1px solid #bfbfbf;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
