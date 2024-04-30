@@ -1,6 +1,6 @@
 {
   "name": "@grassriotsinc/engrid-styles",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Test Build forked from 4Site codebase",
   "main": "./src/main.scss",
   "scripts": {

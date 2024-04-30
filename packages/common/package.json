@@ -1,6 +1,6 @@
 {
-  "name": "@grassriots/engrid-common",
-  "version": "1.0.o",
+  "name": "@grassriotsinc/engrid-common",
+  "version": "1.0.0",
   "description": "Common scripts for the ENGRID Project",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

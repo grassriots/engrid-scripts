@@ -3437,10 +3437,13 @@ select:-webkit-autofill::first-line {
   font-size: var(--select_font-size);
 }
 
-[data-engrid-theme] {
-  --engrid__page-backgroundImage_url: "url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)";
-}
-
+/*[data-engrid-theme] {
+  // ENGRID BACKGROUND IMAGE SECTION'S BACKGROUND PATTERN
+  // This is a background pattern that is shown before the hi-resolution background image is lazy loaded in, if at all
+  // It's background color "--engrid__page-backgroundImage_background-color" should be the average color of the image
+  // REF: (https://doodad.dev/pattern-generator/)
+  --engrid__page-backgroundImage_url: "url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)"; // Invisible GIF
+}*/
 body:not(#en__pagebuilder) .page-backgroundImage img {
   display: none;
 }
@@ -4884,16 +4887,6 @@ body:not(#en__pagebuilder):not([data-engrid-debug]) .i11-hide-label .en__field:n
 
 /*
 ########################################################################
-# FOCUS STATE
-########################################################################
-*/
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/*
-########################################################################
 # RECURRING GIFTS 
 ########################################################################
 */
@@ -5241,7 +5234,7 @@ button.en__ecarditems__addrecipient {
   line-height: 1.5;
   color: #0a0a0a;
   opacity: 0.8;
-  padding-left: 9px;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -5252,7 +5245,6 @@ button.en__ecarditems__addrecipient {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #323232;
 }
 
 .en__ecardrecipients__recipient {
@@ -5964,21 +5956,21 @@ input#en__field_transaction_ccnumber.live-card-type-invalid {
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    tranform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    tranform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    tranform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    tranform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 [data-engrid-theme] {
@@ -6439,7 +6431,6 @@ div[id^=nb-field-] div.nb-feedback {
   left: -99999px !important;
   padding: 0.25rem 0.5rem !important;
   font-size: 0.75rem !important;
-  font-family: HarmoniaSansStd !important;
   font-weight: 400 !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -8734,531 +8725,6 @@ body:not(#en__pagebuilder)[data-engrid-no-page-customCode] .en__component--advro
 
 /* ENGRID ADMIN ONLY STYLINGS  */
 /* @TODO Move Debug and Page Builder styles into their own CSS file or Repo / NPM dependency */
-/*
-* ##########################################################
-* # DEBUG
-* ##########################################################
-*/
-[data-engrid-layout=debug] {
-  border: 5px solid red;
-}
-
-[data-engrid-debug=accessability] img:not([alt]) {
-  outline: 1px dashed #ff0000;
-}
-
-[data-engrid-debug=image-sizes] img:not([height]) {
-  outline: 1px dashed #00ff00;
-}
-[data-engrid-debug=image-sizes] img:not([width]) {
-  outline: 1px dashed #0000ff;
-}
-[data-engrid-debug=image-sizes] img:not([height]):not([width]) {
-  outline: 1px dashed #6a0dad;
-}
-
-[data-engrid-debug=layout] * {
-  outline: 1px dotted #eeeeee !important;
-}
-[data-engrid-debug=layout] body {
-  outline: 1px solid #2980b9 !important;
-}
-[data-engrid-debug=layout] article {
-  outline: 1px solid #3498db !important;
-}
-[data-engrid-debug=layout] nav {
-  outline: 1px solid #0088c3 !important;
-}
-[data-engrid-debug=layout] aside {
-  outline: 1px solid #33a0ce !important;
-}
-[data-engrid-debug=layout] section {
-  outline: 1px solid #66b8da !important;
-}
-[data-engrid-debug=layout] header {
-  outline: 1px solid #99cfe7 !important;
-}
-[data-engrid-debug=layout] footer {
-  outline: 1px solid #cce7f3 !important;
-}
-[data-engrid-debug=layout] h1 {
-  outline: 1px solid #162544 !important;
-}
-[data-engrid-debug=layout] h2 {
-  outline: 1px solid #314e6e !important;
-}
-[data-engrid-debug=layout] h3 {
-  outline: 1px solid #3e5e85 !important;
-}
-[data-engrid-debug=layout] h4 {
-  outline: 1px solid #449baf !important;
-}
-[data-engrid-debug=layout] h5 {
-  outline: 1px solid #c7d1cb !important;
-}
-[data-engrid-debug=layout] h6 {
-  outline: 1px solid #4371d0 !important;
-}
-[data-engrid-debug=layout] main {
-  outline: 1px solid #2f4f90 !important;
-}
-[data-engrid-debug=layout] address {
-  outline: 1px solid #1a2c51 !important;
-}
-[data-engrid-debug=layout] div {
-  outline: 1px solid #036cdb !important;
-}
-[data-engrid-debug=layout] p {
-  outline: 1px solid #ac050b !important;
-}
-[data-engrid-debug=layout] hr {
-  outline: 1px solid #ff063f !important;
-}
-[data-engrid-debug=layout] pre {
-  outline: 1px solid #850440 !important;
-}
-[data-engrid-debug=layout] blockquote {
-  outline: 1px solid #f1b8e7 !important;
-}
-[data-engrid-debug=layout] ol {
-  outline: 1px solid #ff050c !important;
-}
-[data-engrid-debug=layout] ul {
-  outline: 1px solid #d90416 !important;
-}
-[data-engrid-debug=layout] li {
-  outline: 1px solid #d90416 !important;
-}
-[data-engrid-debug=layout] dl {
-  outline: 1px solid #fd3427 !important;
-}
-[data-engrid-debug=layout] dt {
-  outline: 1px solid #ff0043 !important;
-}
-[data-engrid-debug=layout] dd {
-  outline: 1px solid #e80174 !important;
-}
-[data-engrid-debug=layout] figure {
-  outline: 1px solid #ff00bb !important;
-}
-[data-engrid-debug=layout] figcaption {
-  outline: 1px solid #bf0032 !important;
-}
-[data-engrid-debug=layout] table {
-  outline: 1px solid #00cc99 !important;
-}
-[data-engrid-debug=layout] caption {
-  outline: 1px solid #37ffc4 !important;
-}
-[data-engrid-debug=layout] thead {
-  outline: 1px solid #98daca !important;
-}
-[data-engrid-debug=layout] tbody {
-  outline: 1px solid #64a7a0 !important;
-}
-[data-engrid-debug=layout] tfoot {
-  outline: 1px solid #22746b !important;
-}
-[data-engrid-debug=layout] tr {
-  outline: 1px solid #86c0b2 !important;
-}
-[data-engrid-debug=layout] th {
-  outline: 1px solid #a1e7d6 !important;
-}
-[data-engrid-debug=layout] td {
-  outline: 1px solid #3f5a54 !important;
-}
-[data-engrid-debug=layout] col {
-  outline: 1px solid #6c9a8f !important;
-}
-[data-engrid-debug=layout] colgroup {
-  outline: 1px solid #6c9a9d !important;
-}
-[data-engrid-debug=layout] button {
-  outline: 1px solid #da8301 !important;
-}
-[data-engrid-debug=layout] datalist {
-  outline: 1px solid #c06000 !important;
-}
-[data-engrid-debug=layout] fieldset {
-  outline: 1px solid #d95100 !important;
-}
-[data-engrid-debug=layout] form {
-  outline: 1px solid #d23600 !important;
-}
-[data-engrid-debug=layout] input {
-  outline: 1px solid #fca600 !important;
-}
-[data-engrid-debug=layout] keygen {
-  outline: 1px solid #b31e00 !important;
-}
-[data-engrid-debug=layout] label {
-  outline: 1px solid #ee8900 !important;
-}
-[data-engrid-debug=layout] legend {
-  outline: 1px solid #de6d00 !important;
-}
-[data-engrid-debug=layout] meter {
-  outline: 1px solid #e8630c !important;
-}
-[data-engrid-debug=layout] optgroup {
-  outline: 1px solid #b33600 !important;
-}
-[data-engrid-debug=layout] option {
-  outline: 1px solid #ff8a00 !important;
-}
-[data-engrid-debug=layout] output {
-  outline: 1px solid #ff9619 !important;
-}
-[data-engrid-debug=layout] progress {
-  outline: 1px solid #e57c00 !important;
-}
-[data-engrid-debug=layout] select {
-  outline: 1px solid #e26e0f !important;
-}
-[data-engrid-debug=layout] textarea {
-  outline: 1px solid #cc5400 !important;
-}
-[data-engrid-debug=layout] details {
-  outline: 1px solid #33848f !important;
-}
-[data-engrid-debug=layout] summary {
-  outline: 1px solid #60a1a6 !important;
-}
-[data-engrid-debug=layout] command {
-  outline: 1px solid #438da1 !important;
-}
-[data-engrid-debug=layout] menu {
-  outline: 1px solid #449da6 !important;
-}
-[data-engrid-debug=layout] del {
-  outline: 1px solid #bf0000 !important;
-}
-[data-engrid-debug=layout] ins {
-  outline: 1px solid #400000 !important;
-}
-[data-engrid-debug=layout] img {
-  outline: 1px solid #22746b !important;
-}
-[data-engrid-debug=layout] iframe {
-  outline: 1px solid #64a7a0 !important;
-}
-[data-engrid-debug=layout] embed {
-  outline: 1px solid #98daca !important;
-}
-[data-engrid-debug=layout] object {
-  outline: 1px solid #00cc99 !important;
-}
-[data-engrid-debug=layout] param {
-  outline: 1px solid #37ffc4 !important;
-}
-[data-engrid-debug=layout] video {
-  outline: 1px solid #6ee866 !important;
-}
-[data-engrid-debug=layout] audio {
-  outline: 1px solid #027353 !important;
-}
-[data-engrid-debug=layout] source {
-  outline: 1px solid #012426 !important;
-}
-[data-engrid-debug=layout] canvas {
-  outline: 1px solid #a2f570 !important;
-}
-[data-engrid-debug=layout] track {
-  outline: 1px solid #59a600 !important;
-}
-[data-engrid-debug=layout] map {
-  outline: 1px solid #7be500 !important;
-}
-[data-engrid-debug=layout] area {
-  outline: 1px solid #305900 !important;
-}
-[data-engrid-debug=layout] a {
-  outline: 1px solid #ff62ab !important;
-}
-[data-engrid-debug=layout] em {
-  outline: 1px solid #800b41 !important;
-}
-[data-engrid-debug=layout] strong {
-  outline: 1px solid #ff1583 !important;
-}
-[data-engrid-debug=layout] i {
-  outline: 1px solid #803156 !important;
-}
-[data-engrid-debug=layout] b {
-  outline: 1px solid #cc1169 !important;
-}
-[data-engrid-debug=layout] u {
-  outline: 1px solid #ff0430 !important;
-}
-[data-engrid-debug=layout] s {
-  outline: 1px solid #f805e3 !important;
-}
-[data-engrid-debug=layout] small {
-  outline: 1px solid #d107b2 !important;
-}
-[data-engrid-debug=layout] abbr {
-  outline: 1px solid #4a0263 !important;
-}
-[data-engrid-debug=layout] q {
-  outline: 1px solid #240018 !important;
-}
-[data-engrid-debug=layout] cite {
-  outline: 1px solid #64003c !important;
-}
-[data-engrid-debug=layout] dfn {
-  outline: 1px solid #b4005a !important;
-}
-[data-engrid-debug=layout] sub {
-  outline: 1px solid #dba0c8 !important;
-}
-[data-engrid-debug=layout] sup {
-  outline: 1px solid #cc0256 !important;
-}
-[data-engrid-debug=layout] time {
-  outline: 1px solid #d6606d !important;
-}
-[data-engrid-debug=layout] code {
-  outline: 1px solid #e04251 !important;
-}
-[data-engrid-debug=layout] kbd {
-  outline: 1px solid #5e001f !important;
-}
-[data-engrid-debug=layout] samp {
-  outline: 1px solid #9c0033 !important;
-}
-[data-engrid-debug=layout] var {
-  outline: 1px solid #d90047 !important;
-}
-[data-engrid-debug=layout] mark {
-  outline: 1px solid #ff0053 !important;
-}
-[data-engrid-debug=layout] bdi {
-  outline: 1px solid #bf3668 !important;
-}
-[data-engrid-debug=layout] bdo {
-  outline: 1px solid #6f1400 !important;
-}
-[data-engrid-debug=layout] ruby {
-  outline: 1px solid #ff7b93 !important;
-}
-[data-engrid-debug=layout] rt {
-  outline: 1px solid #ff2f54 !important;
-}
-[data-engrid-debug=layout] rp {
-  outline: 1px solid #803e49 !important;
-}
-[data-engrid-debug=layout] span {
-  outline: 1px solid #cc2643 !important;
-}
-[data-engrid-debug=layout] br {
-  outline: 1px solid #db687d !important;
-}
-[data-engrid-debug=layout] wbr {
-  outline: 1px solid #db175b !important;
-}
-[data-engrid-debug=layout] div.debug-panel {
-  outline: none !important;
-}
-[data-engrid-debug=layout] div.debug-panel * {
-  outline: none !important;
-}
-
-body[data-engrid-debug]:before {
-  z-index: 2147483641;
-}
-
-.debug-panel {
-  position: fixed;
-  bottom: min(10vw, 10vh, 50px);
-  right: min(10vw, 10vh, 50px);
-  z-index: 1000;
-  background-color: #ffffff;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #3b3b3b;
-  transform-origin: bottom right;
-  animation: fadeIn 750ms;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media screen and (max-height: 760px) {
-  .debug-panel {
-    transform: scale(0.9);
-  }
-}
-@media screen and (max-height: 700px) {
-  .debug-panel {
-    transform: scale(0.8);
-  }
-}
-@media screen and (max-height: 625px) {
-  .debug-panel {
-    transform: scale(0.7);
-  }
-}
-
-.debug-panel:not(.debug-panel--open) {
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  background-color: hsla(0deg, 0%, 100%, 0.75);
-  transition: background-color 0.15s ease;
-}
-.debug-panel:not(.debug-panel--open):hover {
-  background-color: #ffffff;
-}
-
-.debug-panel--open {
-  width: min(100vw - 2px - min(10vw, 10vh, 50px) - min(10vw, 10vh, 50px), 280px);
-  height: auto;
-  padding: min(20px, 5vw, 5vh);
-  border-radius: 5px;
-}
-
-.debug-panel--open .debug-panel__closed-title {
-  display: none;
-}
-
-.debug-panel--open .debug-panel__title {
-  display: flex;
-}
-
-.debug-panel--open .debug-panel__option {
-  display: block;
-}
-
-.debug-panel__closed-title {
-  font-family: sans-serif;
-}
-
-.debug-panel__title {
-  display: none;
-  margin-bottom: 15px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.debug-panel__title > h2 {
-  margin: 0;
-}
-
-.debug-panel__close {
-  cursor: pointer;
-  padding: 10px;
-  font-family: sans-serif;
-}
-
-.debug-panel__option {
-  display: none;
-  margin-bottom: 15px;
-}
-
-.debug-panel__option:last-of-type {
-  margin-bottom: 0;
-}
-
-.debug-panel__link-label {
-  display: flex;
-}
-.debug-panel__link-label:not(.link-left) {
-  justify-content: center;
-}
-.debug-panel__link-label a,
-.debug-panel__link-label a:hover {
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
-.debug-panel__link-label .debug-panel__edit-link,
-.debug-panel__link-label .debug-panel__edit-link:hover {
-  font-weight: bold;
-  color: #155cb7;
-  justify-self: left;
-}
-
-.debug-panel__btn {
-  margin: 0;
-  width: 100%;
-  font-size: 1.2rem;
-  border: none;
-}
-
-.debug-panel__btn,
-.debug-panel__btn:focus,
-.debug-panel__btn:active {
-  background-color: #1a73e5;
-  color: #fff;
-}
-
-.debug-panel__btn:hover {
-  background-color: #155cb7;
-  color: #fff;
-}
-
-.debug-panel__btn--submit,
-.debug-panel__btn--submit:focus,
-.debug-panel__btn--submit:active {
-  background-color: #139913;
-}
-
-.debug-panel__btn--submit:hover {
-  background-color: #0d6c0d;
-}
-
-.debug-panel:not(.debug-panel--local) .debug-panel__option--local {
-  display: none;
-}
-
-.debug-panel__checkbox input[type=checkbox] {
-  clip: rect(0 0 0 0);
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-.debug-panel__checkbox input[type=checkbox] + label {
-  font-size: 1rem;
-}
-
-[data-engrid-debug] .en__component--page > [data-unhidden] {
-  display: flex;
-  flex-basis: 100%;
-  flex-direction: column;
-  margin-bottom: var(--fields_spacing-block);
-  padding-bottom: 0;
-}
-[data-engrid-debug] .en__field--ccexpire.en__field--splitselect [data-unhidden] {
-  display: none;
-}
-
-body:not([data-engrid-debug]) #debug-bar {
-  display: none;
-}
-
-[data-engrid-debug] img:not([alt]),
-[data-engrid-debug] img[alt=""],
-[data-engrid-demo] img:not([alt]),
-[data-engrid-demo] img[alt=""] {
-  outline: 5px dashed #ff0000;
-}
-
 [data-engrid-theme] {
   --pagebuilder__background-color: #c1c0c0;
 }
